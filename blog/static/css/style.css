@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', serif !important;
+}
+
+h3 {
+    font-weight: 600;
+    color: cadetblue;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+}
+h1,
+.test{
+    color: aqua ;
+}
+
+/* .nav-link {
+    text-decoration: none !important;
+    text-emphasis: none;
+    font-size: 20rem;
+    color: lightcoral !important;
+} */
+

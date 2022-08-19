@@ -1,0 +1,21 @@
+{% extends 'pages/base.html' %}
+
+{% block title %} Blog {% endblock %}
+
+{% block content %}
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Title</th>
+        </tr>
+        {% for post in Post %} 
+        <tr>
+            <td>{{post.date|date:"d-m-Y"}}</td>
+            <td><a href="{% url 'post' post.id %}">{{post.title}}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
+
