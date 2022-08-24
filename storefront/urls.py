@@ -16,9 +16,10 @@ Including another URLconf
 from cgitb import handler
 from django.contrib import admin
 from django.urls import path, include
-
+from blog import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.list),
     path('myhome/', include('myhome.urls')),
     path('blog/', include('blog.urls'))
 ]
